@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --felt: #0E2A20;
+  --ivory: #F6F4EE;
+  --surface: #FFFFFF;
+  --jade: #1A6B4F;
+  --jade-deep: #13523C;
+  --jade-soft: #E4F1EA;
+  --line: #E4E1D8;
+  --ink: #17201B;
+  --muted: #5B6660;
+  --amber-soft: #FDF0D5;
+  --amber: #8A4B08;
+  --red-soft: #FDE8E6;
+  --red: #A61B12;
+  --stone: #EEF0EC;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+  --color-felt: var(--felt);
+  --color-jade: var(--jade);
+  --color-jade-deep: var(--jade-deep);
+  --color-jade-soft: var(--jade-soft);
+  --color-ivory: var(--ivory);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-amber-soft: var(--amber-soft);
+  --color-amber: var(--amber);
+  --color-red-soft: var(--red-soft);
+  --color-red: var(--red);
+  --color-stone: var(--stone);
+  --font-sans: var(--font-plus-jakarta);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+ font-family: var(--font-plus-jakarta), sans-serif;
+}
+
+font-mono {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
